@@ -1,0 +1,317 @@
+.jd	{
+
+	height: 480px;
+	/* background-color: pink; */
+	position: relative;
+}
+img {
+	vertical-align: top;			/* 必须加，清除底部多余的白边 */
+}
+.jd-inner {
+
+	height: 480px;
+	/* background-color: skyblue; */
+	position: relative;
+	z-index: 1;
+}
+.ad {
+
+	height: 480px;
+	background-image: url(../images/bg.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;						/* 必须写，因为有定位后转化为行内块模块，智能靠内容撑开 */
+	z-index: 0;
+}
+.ad a {
+	display: block;
+	width: 100%;
+	height: 100%;
+} 
+.jd-clo1 {
+
+	width: 190px;
+	height: 465px;
+	background-color: #6E6568;
+	float: left;
+	padding-top: 15px;
+
+}
+.jd-clo1 li {
+
+	padding-left: 10px;
+	height: 28px;
+	line-height: 40px;
+	margin-top: 10px;
+}
+.jd-clo1 li span {
+
+	font-size: 12px;
+}
+.jd-clo1 li a {
+color: #fff;
+font-size: 16px;
+}
+.jd-clo1 li:hover {
+	background-color: #999395;
+}
+.jd-clo2 {
+
+	width: 790px;
+	height: 480px;
+	/* background-color: purple; */
+	float: left;
+	margin-left: 10px;
+}
+
+.jd-clo3 {
+	width: 190px;
+	height: 480px;
+/* 	background-color: yellow; */
+	float: right;
+}
+
+.jd-clo2-h {
+
+	height: 340px;
+	background-color: black;
+	position: relative;
+}
+
+.jd-clo2-b div {
+	float: left;
+	width: 390px;
+	height: 130px;
+	margin-top: 5px;
+}
+.jd-clo2-b div img {
+	width: 100%;			/* 自动缩放，只能写with100% */
+}
+.firstPic {
+
+	margin-right: 10px;
+}
+.jd-clo2-h ol  {
+	width: 180px;
+	height: 20px;
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	margin-left: -90px;
+	background:rgba(0, 0 ,0 , 0.4);
+	border-radius: 10px;
+
+
+}
+.jd-clo2-h ol li {
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	border-radius: 50%;
+	float: left;
+	margin: 3px 5px;
+	cursor: pointer;
+}
+.jd-clo2-h .current {
+	background-color: #f10215;
+}
+.arr-l,.arr-r {
+
+	position: absolute;
+
+	top: 50%;
+	margin-top: -30px;
+	height: 60px;
+	width: 30px;
+	background: rgba(0, 0, 0, 0.4);
+	font-family:"icomoon";
+	color: #ffff;
+	text-align: center;
+	line-height: 60px;
+	font-size: 28px;
+	display: none;
+}
+.arrow:hover .arr-l,.arrow:hover .arr-r {
+
+	display: block;							/* 鼠标经过arrow盒子下的arr-1和arr-r显示 */
+}
+.arr-l {
+	left: 0;
+
+}
+.arr-r {
+	right: 0;
+}
+.jd-clo3 .jd-clo3-h {
+
+	
+	height: 95px;
+/* 	background-color: red; */
+	padding: 20px 15px 0;
+
+}
+.jd-clo3 .jd-clo3-m {
+
+	height: 149px;
+/* 	background-color: purple; */
+	border-top: 1px solid #ccc;
+	
+	padding: 5px 15px 0;			/* 上5px，下0，左右15px */
+
+}
+
+.jd-clo3 .jd-clo3-b {
+	
+	height: 205px;
+/* 	background-color: blue; */
+}
+.jd-clo3-h .user-info {
+
+	height: 40px;
+}
+.jd-clo3-h .user-info h5  {
+width: 40px;
+height: 40px;
+float: left;
+border-radius: 10px;			/* 把盒子变成圆角 */
+overflow: hidden;				/* 多出去的脚切掉 */
+
+}
+.jd-clo3-h .user-info ul {
+	float: right;
+	color: #666691;
+
+}
+
+.jd-clo3-h .user-info h5 img {
+	width: 100%;
+
+}
+.jd-clo3-h .user-info ul li {
+	text-align: center;
+}
+.jd-clo3-h .user-info ul li a:hover {
+
+	color: #f10215;
+}
+.xinrenfuli {
+
+	margin-top: 13px;
+	height: 20px;
+	text-align: center;
+}
+.xinrenfuli a {
+	display: inline-block;
+	width: 50px;
+	height: 20px;
+	border: 1px solid #f10215;
+	font-size: 12px;
+	color: #f10215;
+	
+	line-height: 20px
+
+
+
+}
+
+.xinrenfuli-l {
+
+	margin-right:10px;
+}
+.tab-hd {
+	border-bottom: 1px solid #ccc;
+	padding: 3px 0;
+	position: relative;
+}
+.tab-hd a {
+	color: #747474;
+	font-size: 12px;
+}
+.chuxiao {
+
+	border-right: 1px solid #ccc;
+	padding-right: 10px;
+}
+.more-more {
+	position: absolute;
+	right: 0;
+	bottom: 3px;
+}
+.line {
+	width: 28px;
+	height: 2px;
+	background-color: #f10215;
+	position: absolute;
+	left: 0;
+	bottom: -1px;
+}
+.tab-bd li {
+
+	height: 23px;
+	font-size: 16px;
+	line-height: 23px;
+
+}
+.tab-bd li a {
+	color: #666666;
+}
+
+
+.tab-bd {
+	margin-top: 10px;
+}
+.jd-clo3-b ul {
+ width: 192px;								/* ul加宽一点像素，使其能装下 */
+
+}
+.jd-clo3-b li {
+	width: 47px;
+	height: 69px;
+/* 	background-color: yellow; */
+	float: left;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+.jd-clo3 .jd-clo3-b {
+
+	width: 190px;
+	height: 210px;
+	overflow: hidden;		/* 把多余的线切掉 */
+}
+
+.jd-clo3 .jd-clo3-b li a {
+
+	display: block;
+	width: 100%;
+	height: 100%;		/* 让a填充整个li */
+}
+
+.jd-clo3 .jd-clo3-b li p {
+	text-align: center;
+	font-size: 12px;
+}
+
+.jd-clo3 .jd-clo3-b li i {
+
+	display: block;
+	width: 24px;
+	height: 24px;
+	margin: 15px auto 8px;		/* i的位子，把字体往下压 */
+	background-image: url(../images/sprite_fs@1x.png);
+}
+
+.jd-clo3 .jd-clo3-b li .huafei {
+	background-position: 0 -87px;
+}
+.jd-clo3 .jd-clo3-b li .jipiao {
+	background-position: -131px -88px;
+}
+.jd-clo3 .jd-clo3-b li .jiudian {
+	background-position: -87px -44px;
+}
+.jd-clo3 .jd-clo3-b li .huochepiao {
+	background-position: 0 -44px;
+}
